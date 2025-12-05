@@ -6,14 +6,14 @@ It provides a simple interface for sending SMS messages through AWS services suc
 
 Aldera SMS automatically detects the framework you are using (via explicit initialization) and exposes a consistent API for sending SMS messages.
 
-# Features
+## Features
 - **Framework-agnostic**: Works with Django and Flask; FastAPI support coming soon.
 - **AWS-powered SMS delivery** via SNS.
 - **Simple configuration** using your framework's native settings pattern.
 - **Minimal code changes** needed to adopt across different frameworks.
 - **Explicit backend selection** for predictable behavior.
 
-# Installation
+## Installation
 
 ```bash
 pip install aldera
@@ -25,7 +25,7 @@ To use asynchronous functionality, add `[async]` qualifier:
 pip install aldera[async]
 ```
 
-# Configuration Guide
+## Configuration Guide
 
 Aldera supports multiple Python web frameworks.
 Configuration differs slightly depending on the framework.
@@ -95,7 +95,7 @@ def create_app():
 
 Aldera retrieves settings directly from `app.config` when `init_app()` is called.
 
-# API
+## API
 
 #### `send_sms_message(message: str, phone_number: str)`
 
@@ -107,7 +107,7 @@ Example:
 send_sms_message("Your code is 1234", "+15555555555")
 ```
 
-# Environment Variables (Optional)
+## Environment Variables (Optional)
 
 Aldera supports environment variable overrides:
 
@@ -118,7 +118,7 @@ Aldera supports environment variable overrides:
 
 This allows flexible configuration across staging/production deployments.
 
-# Backends
+## Backends
 
 ### AWS SNS (`aws`)
 
@@ -149,15 +149,15 @@ print(sms.messages[0].message)             # -> "Hello unit tests!"
 print(sms.messages[0].recipeint_number)    # -> "+15555555555"
 ```
 
-# Contributing
+## Contributing
 
 Pull requests are welcome!
 If you'd like to add support for another framework or SMS backend, feel free to open an issue or PR.
 
-# License
+## License
 
 Aldera is released under an [Apache License 2.0](LICENSE).
 
-# Author
+## Author
 
 Zack Young
