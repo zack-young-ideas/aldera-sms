@@ -97,6 +97,7 @@ def send_email():
 
 #### Flask email config options
 | Key | Description |
+|-----|-------------|
 | `ALDERA_AWS_REGION` | AWS SES region |
 | `ALDERA_CONFIGURATION_SET` | Optional SES config set |
 
