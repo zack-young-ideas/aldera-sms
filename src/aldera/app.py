@@ -15,6 +15,7 @@ class AlderaConfig(AppConfig):
     name = 'aldera'
     label = 'aldera'
     verbose_name = 'Aldera SMS'
+    default = True
 
     def ready(self):
         config.load_dict(getattr(settings, 'ALDERA', {}))

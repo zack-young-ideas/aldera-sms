@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "aldera"
 dynamic = ["version"]
-description = "A lightweight SMS and cloud utility backend for Python web applications, powered by AWS SNS."
+description = "A lightweight Python library for sending email and SMS messages using AWS."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }

@@ -113,7 +113,7 @@ Add Aldera to your installed apps:
 ```python
 INSTALLED_APPS = [
     ...
-    "aldera",
+    "aldera.app.AlderaConfig",
 ]
 ```
 
